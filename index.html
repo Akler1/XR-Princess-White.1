@@ -1,28 +1,19 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Loading…</title>
+<meta charset="utf-8">
+<title>Loading…</title>
 
-  <!-- Target file (matches: "XR Princess White .1.html") -->
-  <script>
-    (function () {
-      var target = "XR%20Princess%20White%20.1.html";
-      var url = new URL(target, window.location.href);
-      // Avoid looping if we're already there
-      if (!window.location.pathname.endsWith("/" + target)) {
-        window.location.replace(url.href);
-      }
-    })();
-  </script>
+<!-- IMPORTANT: there is a space before .1 in the filename -->
+<link rel="canonical" href="./XR%20Princess%20White%20.1.html">
 
-  <!-- Canonical + meta refresh fallback -->
-  <link rel="canonical" href="XR%20Princess%20White%20.1.html" />
-  <meta http-equiv="refresh" content="0; url=XR%20Princess%20White%20.1.html" />
-</head>
+<meta http-equiv="refresh" content="0;url=./XR%20Princess%20White%20.1.html">
 
-<body>
-  <p><a href="XR%20Princess%20White%20.1.html">Continue</a></p>
-</body>
-</html>
+<script>
+  (function () {
+    var target = "./XR%20Princess%20White%20.1.html";
+    if (location.href.indexOf("XR%20Princess%20White%20.1.html") === -1) {
+      location.replace(target);
+    }
+  })();
+</script>
+
+<a href="./XR%20Princess%20White%20.1.html">Continue</a>
